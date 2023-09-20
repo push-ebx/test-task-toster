@@ -29,6 +29,7 @@ const start_timer = () => {
 }
 
 const set_active_preview = (e) => {
+  console.log(e)
   const current_active = document.getElementsByClassName("active_preview")[0]
   current_active.classList.remove("active_preview")
   e.classList.add("active_preview");

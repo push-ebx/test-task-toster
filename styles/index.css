@@ -220,7 +220,6 @@ main #main_carousel #buy_now {
 
 a {
   text-decoration: none;
-  pointer-events: none;
 }
 
 .active_preview {
