@@ -1,0 +1,280 @@
+header {
+  height: 1.65rem;
+  background: #F19D2F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header span {
+  font-size: 0.6347rem;
+  font-weight: 400;
+  color: #2C2B31;
+  font-family: "GothamProMedium";
+}
+
+#under_header {
+  height: 4.6rem;
+  background: #FFD1AC;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 0.5rem;
+}
+#under_header span {
+  font-size: 0.67345rem;
+  font-weight: 400;
+  font-family: "GothamProMedium";
+}
+
+main img {
+  width: 100%;
+}
+main #main_sale {
+  position: relative;
+}
+main #timer_wrapper {
+  position: absolute;
+  left: 0.65rem;
+  bottom: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.3rem;
+  border-radius: 7px;
+  background: #F19D2F;
+  color: #FFF;
+  font-weight: 700;
+  font-family: GothamProBold;
+  padding: 0.45rem 0.35rem;
+  width: 5.5rem;
+}
+main #timer_wrapper #timer {
+  font-size: 1.0627rem;
+}
+main #timer_wrapper #timer_title {
+  font-size: 0.52995rem;
+  text-transform: uppercase;
+}
+main #sale_wrapper {
+  position: absolute;
+  right: 0.65rem;
+  bottom: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.1rem;
+  border-radius: 7px;
+  background: #37D997;
+  color: #FFF;
+  font-weight: 700;
+  font-family: GothamProBold;
+  padding: 0.25rem 0.35rem 0.25rem;
+  width: 6rem;
+}
+main #sale_wrapper #old_price {
+  font-size: 0.90385rem;
+  text-decoration: line-through;
+  text-decoration-color: #E27500;
+  text-decoration-thickness: 3.5px;
+}
+main #sale_wrapper #price {
+  font-size: 1.11505rem;
+}
+main #main_carousel {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  margin: 0.55rem 0.8rem;
+  color: #2C2B31;
+}
+main #main_carousel .excellent {
+  display: flex;
+  justify-content: space-between;
+}
+main #main_carousel .excellent span {
+  font-weight: 400;
+  font-size: 0.6rem;
+}
+main #main_carousel .excellent #best_selling {
+  color: #37D997;
+  text-decoration-line: underline;
+}
+main #main_carousel h2 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: GothamProBold;
+}
+main #main_carousel #product_description {
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.76rem;
+  row-gap: 0.6rem;
+}
+main #main_carousel #selects {
+  display: flex;
+  justify-content: space-between;
+}
+main #main_carousel #selects select {
+  width: 8.5rem;
+  height: 2.5rem;
+  font-size: 1rem;
+  font-family: GothamProBold;
+  font-weight: 700;
+  text-align: center;
+  background: #FFF;
+  border-radius: 0.75rem;
+  border: none;
+  text-transform: uppercase;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("../assets/images/arrow.png");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em, 100% 0;
+}
+main #main_carousel #selects div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.2rem;
+}
+main #main_carousel #selects label {
+  font-size: 0.5rem;
+  color: #2C2B31;
+}
+main #main_carousel #buy_now {
+  font-family: GothamProRegular;
+  border-radius: 0.75rem;
+  background: #37D997;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 0.6rem 0;
+  display: block;
+  text-decoration: none;
+  color: #FFF;
+}
+
+.carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.carousel img {
+  object-fit: cover;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.slides::-webkit-scrollbar {
+  display: none;
+}
+
+.slides > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  margin: 0 1rem 1rem;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}
+
+#previews {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.slider > div > a > img {
+  margin: 0;
+  width: 4rem;
+  height: 3.3rem;
+  border-radius: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  pointer-events: none;
+}
+
+.active_preview {
+  opacity: 0.5;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+  font-family: "GothamProLight";
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  background: white;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #F0F0F0;
+  width: 390px;
+}
+
+@font-face {
+  font-family: "GothamProLight";
+  src: url("../fonts/GothamProLight/GothamProLight.eot");
+  src: url("../fonts/GothamProLight/GothamProLight.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProLight/GothamProLight.woff") format("woff"), url("../fonts/GothamProLight/GothamProLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "GothamProRegular";
+  src: url("../fonts/GothamProRegular/GothamProRegular.eot");
+  src: url("../fonts/GothamProRegular/GothamProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProRegular/GothamProRegular.woff") format("woff"), url("../fonts/GothamProRegular/GothamProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "GothamProMedium";
+  src: url("../fonts/GothamProMedium/GothamProMedium.eot");
+  src: url("../fonts/GothamProMedium/GothamProMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProMedium/GothamProMedium.woff") format("woff"), url("../fonts/GothamProMedium/GothamProMedium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "GothamProBold";
+  src: url("../fonts/GothamProBold/GothamProBold.eot");
+  src: url("../fonts/GothamProBold/GothamProBold.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProBold/GothamProBold.woff") format("woff"), url("../fonts/GothamProBold/GothamProBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=index.css.map */

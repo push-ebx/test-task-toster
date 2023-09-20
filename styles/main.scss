@@ -1,0 +1,154 @@
+main {
+  img {
+    width: 100%;
+  }
+
+  #main_sale {
+    position: relative;
+  }
+
+  #timer_wrapper {
+    position: absolute;
+    left: 0.65rem;
+    bottom: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.3rem;
+    border-radius: 7px;
+    background: $timer-wrapper-color;
+    color: #FFF;
+    font-weight: 700;
+    font-family: GothamProBold;
+    padding: 0.45rem 0.35rem;
+    width: 5.5rem;
+
+    #timer {
+      font-size: 1.0627rem;
+    }
+
+    #timer_title {
+      font-size: 0.52995rem;
+      text-transform: uppercase;
+    }
+  }
+
+  #sale_wrapper {
+    position: absolute;
+    right: 0.65rem;
+    bottom: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.1rem;
+    border-radius: 7px;
+    background: $sale-wrapper-color;
+    color: #FFF;
+    font-weight: 700;
+    font-family: GothamProBold;
+    padding: 0.25rem 0.35rem 0.25rem;
+    width: 6rem;
+
+    #old_price {
+      font-size: 0.90385rem;
+      text-decoration: line-through;
+      text-decoration-color: $line-through-color;
+      text-decoration-thickness: 3.5px;
+    }
+
+    #price {
+      font-size: 1.11505rem;
+    }
+  }
+
+  #main_carousel {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin: 0.55rem 0.8rem;
+    color: $text-color;
+
+    .excellent {
+      display: flex;
+      justify-content: space-between;
+
+      span {
+        font-weight: 400;
+        font-size: 0.6rem;
+      }
+
+      #best_selling {
+        color: #37D997;
+        text-decoration-line: underline;
+      }
+    }
+
+    h2 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-family: GothamProBold;
+    }
+
+    #product_description {
+      color: #000;
+      display: flex;
+      flex-direction: column;
+      font-size: 0.76rem;
+      row-gap: 0.6rem;
+    }
+
+    #selects {
+      display: flex;
+      justify-content: space-between;
+
+      select {
+        width: 8.5rem;
+        height: 2.5rem;
+        font-size: 1rem;
+        font-family: GothamProBold;
+        font-weight: 700;
+        text-align: center;
+        background: #FFF;
+        border-radius: 0.75rem;
+        border: none;
+        text-transform: uppercase;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-image: url("../assets/images/arrow.png");
+        background-repeat: no-repeat;
+        background-position:
+                calc(100% - 15px) 1em,
+                calc(100% - 20px) 1em,
+                100% 0;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 0.2rem;
+      }
+
+      label {
+        font-size: 0.5rem;
+        color: $text-color;
+      }
+    }
+
+    #buy_now {
+      font-family: GothamProRegular;
+      border-radius: 0.75rem;
+      background: #37D997;
+      width: 100%;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      padding: 0.6rem 0;
+      display: block;
+      text-decoration: none;
+      color: #FFF;
+    }
+  }
+}

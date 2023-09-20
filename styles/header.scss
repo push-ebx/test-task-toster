@@ -1,0 +1,32 @@
+@import "vars";
+
+header {
+  height: 1.65rem;
+  background: $header-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    font-size: 0.6347rem;
+    font-weight: 400;
+    color: $text-color;
+    font-family: "GothamProMedium";
+  }
+}
+
+#under_header {
+  height: 4.6rem;
+  background: $under-header-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 0.5rem;
+
+  span {
+    font-size: 0.67345rem;
+    font-weight: 400;
+    font-family: "GothamProMedium";
+  }
+}
